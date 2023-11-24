@@ -51,7 +51,7 @@ const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.imgContainer}>
-        <Image  source={require('../images/MegaSaverFullLogo.png')} style={{ width: '100%', height: 90 }}/>
+        
         </View>
 
         <View style={styles.header}>
@@ -62,34 +62,8 @@ const HomeScreen = ({navigation}) => {
         
       
         <View style={styles.footer}>
-            <Button  title="Locations" color="orange" onPress={() => navigation.navigate('Locations')}/>
-            <Modal
-              animationType="slide"
-              transparent={true}
-              visible={modalVisible}
-              onRequestClose={() => {
-                Alert.alert("Modal has been closed.");
-                setModalVisible(!modalVisible);
-              }}
-            >
-                <View style={styles.popup}>
-                    <View style={styles.modalView}>
-                        <Image source={require('../images/I6A9.png')}/>
-                          <Pressable
-                            style={[styles.button, styles.buttonClose]}
-                            onPress={() => setModalVisible(!modalVisible)}
-                                    >
-                            <Text style={styles.textStyle}>Hide QR Code</Text>
-                          </Pressable>
-                    </View>
-                </View>
-            </Modal>
-            <Pressable
-              style={[styles.button, styles.buttonOpen]}
-              onPress={() => setModalVisible(true)}
-                >
-                <Text style={styles.textStyle}>5 Cents Off</Text>
-            </Pressable>
+            <Button  title="Find Drivers" color="orange" onPress={() => navigation.navigate('Locations')}/>
+            
         </View>
     </SafeAreaView>
     

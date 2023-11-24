@@ -9,7 +9,7 @@ import RegisterScreen from '../screens/RegisterScreen';
 import LocationsScreen from '../screens/LocationsScreen';
 import AccountRecovery from '../screens/AccountRecovery';
 import PhoneConfScreen from '../screens/PhoneConfirmScreen';
-
+import RequestDriverScreen from '../screens/RequestDriverScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -22,7 +22,7 @@ const Navigation = () => {
             <Stack.Screen name="Home" component={HomeScreen}options={{headerShown: false}}/>
             <Stack.Screen name="Login"component={LoginScreen}options={{headerShown: false}}/>
             <Stack.Screen name="Confirm Phone Number"component={PhoneConfScreen}options={{headerShown: false}}/>
-            
+            <Stack.Screen name="RequestDriver" component={RequestDriverScreen}options={{headerShown: false}} />
             <Stack.Screen name="Locations" component={LocationsScreen}options={{headerShown: false}} />
             <Stack.Screen name="Register"component={RegisterScreen}options={{headerShown: false}}/>
             <Stack.Screen name="Account Recovery"component={AccountRecovery}options={{headerShown: false}}/>
